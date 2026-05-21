@@ -40,9 +40,9 @@ class AuthController extends Controller
             $request->session()->regenerate();
             
             if (Auth::user()->role == 'admin') {
-                return redirect()->intended('/admin/dashboard');
+                return redirect('/admin/dashboard');
             }
-            return redirect()->intended('/');
+            return redirect('/');
         }
 
         return back()->withErrors(['login_error' => 'Username/Email atau Password salah.'])->withInput();

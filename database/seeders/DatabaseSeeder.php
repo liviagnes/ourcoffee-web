@@ -19,16 +19,16 @@ class DatabaseSeeder extends Seeder
         User::create([
             'full_name' => 'Administrator',
             'username'  => 'admin',
-            'email'     => 'admin@orucoffee.com',
-            'password'  => Hash::make('admin123'),
+            'email'     => 'admin@ourcoffee.com',
+            'password'  => Hash::make('password'),
             'role'      => 'admin',
         ]);
 
         // 2. Generate Default Kasir Account
         User::create([
-            'full_name' => 'Kasir Oru',
+            'full_name' => 'Kasir OurCoffee',
             'username'  => 'kasir',
-            'email'     => 'kasir@orucoffee.com',
+            'email'     => 'kasir@ourcoffee.com',
             'password'  => Hash::make('kasir123'),
             'role'      => 'kasir',
         ]);
