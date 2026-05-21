@@ -1,0 +1,88 @@
+.history-section {
+  padding: 20px 0 80px;
+  min-height: 80vh;
+}
+
+/* Card History */
+.history-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.history-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: #f0dac5;
+}
+
+/* Garis warna status di kiri card */
+.status-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+}
+
+.status-pending {
+  background: #ffc107;
+}
+
+/* Kuning */
+.status-paid {
+  background: #198754;
+}
+
+/* Hijau */
+.status-cancelled {
+  background: #dc3545;
+}
+
+/* Merah */
+
+.order-date {
+  font-size: 13px;
+  color: #999;
+}
+
+.order-code {
+  font-weight: 700;
+  color: #4a3228;
+  font-size: 16px;
+}
+
+.total-price {
+  font-weight: 700;
+  color: #8b5e3c;
+  font-size: 18px;
+}
+
+.badge-status {
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btn-detail {
+  border: 1px solid #8b5e3c;
+  color: #8b5e3c;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-detail:hover {
+  background: #8b5e3c;
+  color: #fff;
+}

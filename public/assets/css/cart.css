@@ -1,0 +1,367 @@
+/* Styling Halaman Cart */
+body {
+  background: #f9f6f3;
+  /* Konsisten dengan Menu */
+}
+
+.cart-header-row {
+  display: flex;
+  justify-content: space-between;
+  /* Kiri Kanan Mentok */
+  align-items: center;
+  /* Vertikal Center */
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  /* Garis pemisah tipis biar rapi */
+}
+
+/* Bagian Judul */
+.cart-title-block h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4a3228;
+  margin-bottom: 5px;
+}
+
+.cart-title-block p {
+  color: #7a5c4d;
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Tombol Kembali di Kanan Header */
+.btn-header-back {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #8b5e3c;
+  font-weight: 600;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.btn-header-back:hover {
+  border-color: #8b5e3c;
+  background: #8b5e3c;
+  color: #fff;
+  transform: translateX(-3px);
+  /* Efek geser dikit */
+}
+
+
+.cart-section {
+  padding: 0 0 80px;
+  min-height: 10vh;
+}
+
+.cart-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4a3228;
+  margin-bottom: 5px;
+}
+
+.cart-subtitle {
+  color: #7a5c4d;
+  margin-bottom: 40px;
+}
+
+/* LIST ITEM (KIRI) */
+.cart-list {
+  background: transparent;
+}
+
+.cart-item {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139, 94, 60, 0.1);
+}
+
+.cart-img-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.cart-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3e2723;
+  margin-bottom: 4px;
+}
+
+.product-price {
+  color: #8b5e3c;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* QUANTITY CONTROL */
+.cart-qty-control {
+  display: flex;
+  align-items: center;
+  background: #fdf2e9;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin: 0 20px;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b5e3c;
+  font-size: 12px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.qty-btn:hover {
+  background: #8b5e3c;
+  color: #fff;
+}
+
+.qty-val {
+  margin: 0 15px;
+  font-weight: 700;
+  color: #4a3228;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ACTION KANAN */
+.cart-action-right {
+  text-align: right;
+  min-width: 100px;
+}
+
+.subtotal-text {
+  font-weight: 700;
+  color: #3e2723;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.btn-delete {
+  color: #dc3545;
+  background: #fff0f1;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-delete:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* SUMMARY BOX (KANAN) */
+.cart-summary {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  position: sticky;
+  top: 100px;
+  /* Biar nempel pas discroll */
+}
+
+.cart-summary h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #3e2723;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 15px;
+}
+
+.summary-row.total {
+  font-size: 20px;
+  font-weight: 800;
+  color: #8b5e3c;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.btn-checkout {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #8b5e3c;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(139, 94, 60, 0.2);
+  transition: 0.3s;
+}
+
+.btn-checkout:hover {
+  background: #6d4c41;
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+.btn-continue {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #8b5e3c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn-continue:hover {
+  text-decoration: underline;
+}
+
+.empty-cart-wrapper {
+  min-height: 60vh;
+  /* Menggunakan tinggi viewport agar pas di tengah */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Icon Besar Pudar */
+.empty-cart-icon {
+  font-size: 80px;
+  color: #e6dace;
+  /* Warna coklat sangat muda/pudar */
+  margin-bottom: 25px;
+  animation: float 3s ease-in-out infinite;
+  /* Animasi mengambang halus */
+}
+
+/* Judul Empty */
+.empty-cart-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4a3228;
+  margin-bottom: 10px;
+}
+
+/* Deskripsi Empty */
+.empty-cart-desc {
+  color: #7a5c4d;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 400px;
+  /* Batasi lebar teks agar enak dibaca */
+  line-height: 1.6;
+}
+
+/* Tombol Kembali ke Menu */
+.btn-back-menu {
+  display: inline-flex;
+  /* Agar lebar menyesuaikan konten, bukan full width */
+  align-items: center;
+  gap: 10px;
+  background: #8b5e3c;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(139, 94, 60, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-back-menu:hover {
+  background: #6d4c41;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(139, 94, 60, 0.3);
+  color: #fff;
+}
+
+/* Animasi Floating (Opsional) */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .cart-details {
+    margin-left: 0;
+  }
+
+  .cart-qty-control {
+    margin: 10px 0;
+  }
+
+  .cart-action-right {
+    text-align: center;
+  }
+
+  .cart-summary {
+    margin-top: 30px;
+    position: static;
+  }
+}
